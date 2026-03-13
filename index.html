@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="zh-TW" data-theme="dark">
+<head>
+<!--
+   ______                            __
+  / ____/___  ____ ___  ____  __  __/ /____  _____
+ / /   / __ \/ __ `__ \/ __ \/ / / / __/ _ \/ ___/
+/ /___/ /_/ / / / / / / /_/ / /_/ / /_/  __/ /
+\____/\____/_/ /_/ /_/ .___/\__,_/\__/\___/_/
+                    /_/
+        Created with Perplexity Computer
+        https://www.perplexity.ai/computer
+-->
+<!-- Perplexity Computer Attribution -->
+<meta name="generator" content="Perplexity Computer">
+<meta name="author" content="Perplexity Computer">
+<meta property="og:see_also" content="https://www.perplexity.ai/computer">
+<link rel="author" href="https://www.perplexity.ai/computer">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>張嘉豪師傅 — 不老松足湯 · 台南安平</title>
+  <meta name="description" content="台南安平不老松足湯，張嘉豪師傅提供腳底按摩、全身指壓、筋膜刀療程。另有柔手傳統整復推拿居家工作室服務。線上預約，深夜也能到館。">
+
+  <meta property="og:title" content="張嘉豪師傅 — 不老松足湯安平店">
+  <meta property="og:description" content="專業按摩調理，深夜也能預約。腳底按摩、全身指壓、筋膜刀療程 | 台南安平72號">
+  <meta property="og:type" content="website">
+
+  <!-- Fonts: Zodiak (display, elegant serif) + General Sans (body) -->
+  <link href="https://api.fontshare.com/v2/css?f[]=zodiak@400,700&f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./base.css">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- ===== NAV ===== -->
+  <nav class="nav" id="nav" role="navigation" aria-label="主選單">
+    <div class="container">
+      <div class="nav__inner">
+
+        <!-- Logo -->
+        <a href="#" class="nav__logo" aria-label="張嘉豪師傅首頁">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <rect width="36" height="36" rx="10" fill="var(--color-primary)"/>
+            <!-- Simple leaf/hand mark for wellness -->
+            <path d="M18 8 C12 8 8 13 8 18 C8 23 12 27 18 27 C18 27 18 22 18 18 C18 14 22 10 26 10 C24 8.5 21 8 18 8Z" fill="white" opacity="0.95"/>
+            <path d="M18 18 C20 18 24 20 26 24 C24 26 21 27 18 27 C18 27 18 22 18 18Z" fill="white" opacity="0.5"/>
+          </svg>
+          <div>
+            <div class="nav__logo-text">不老松 <span>安平店</span></div>
+            <div class="nav__logo-sub">張嘉豪師傅</div>
+          </div>
+        </a>
+
+        <!-- Desktop links -->
+        <ul class="nav__links" role="list">
+          <li><a href="#services">服務項目</a></li>
+          <li><a href="#studio">柔手工作室</a></li>
+          <li><a href="#master">關於師傅</a></li>
+          <li><a href="#hours">時間地點</a></li>
+        </ul>
+
+        <!-- Right actions -->
+        <div class="nav__actions">
+          <button class="nav__theme-toggle" data-theme-toggle aria-label="切換明暗模式">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>
+          </button>
+          <a href="https://booking.tainanboxing.com" target="_blank" rel="noopener noreferrer" class="nav__cta">立即預約</a>
+          <button class="nav__mobile-toggle" id="mobileToggle" aria-label="開啟選單" aria-expanded="false">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+          </button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile menu -->
+  <div class="nav__mobile-menu" id="mobileMenu" role="dialog" aria-modal="true" aria-label="行動選單">
+    <button class="nav__mobile-close" id="mobileClose" aria-label="關閉選單">✕</button>
+    <a href="#services" onclick="closeMobileMenu()">服務項目</a>
+    <a href="#studio" onclick="closeMobileMenu()">柔手工作室</a>
+    <a href="#master" onclick="closeMobileMenu()">關於師傅</a>
+    <a href="#hours" onclick="closeMobileMenu()">時間地點</a>
+    <a href="https://booking.tainanboxing.com" target="_blank" rel="noopener noreferrer" class="btn--primary">立即線上預約 →</a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" aria-label="首頁主視覺">
+    <div class="hero__bg" role="img" aria-label="溫暖療癒的按摩空間"></div>
+    <div class="hero__overlay" aria-hidden="true"></div>
+    <div class="hero__content container">
+
+      <div class="hero__badge">
+        <svg width="8" height="8" viewBox="0 0 8 8" fill="currentColor" aria-hidden="true"><circle cx="4" cy="4" r="3"/></svg>
+        台南安平 · 不老松72號
+      </div>
+
+      <div class="hero__name">張嘉豪師傅</div>
+
+      <h1 class="hero__title">
+        放鬆，<br><span class="accent">由此開始</span>
+      </h1>
+
+      <p class="hero__subtitle">
+        專業調理身心的場所。腳底按摩、全身指壓、筋膜刀療程，從下午兩點一路到凌晨兩點，隨時等你來放鬆。
+      </p>
+
+      <div class="hero__actions">
+        <a href="https://booking.tainanboxing.com" target="_blank" rel="noopener noreferrer" class="btn--primary">
+          立即線上預約
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#services" class="btn--secondary">查看服務項目</a>
+      </div>
+
+      <div class="hero__stats" aria-label="重點資訊">
+        <div>
+          <div class="stat__value">14–02</div>
+          <div class="stat__label">每日營業時間</div>
+        </div>
+        <div>
+          <div class="stat__value">深夜</div>
+          <div class="stat__label">也能到館</div>
+        </div>
+        <div>
+          <div class="stat__value">NT$800</div>
+          <div class="stat__label">課程起價</div>
+        </div>
+        <div>
+          <div class="stat__value">安平72</div>
+          <div class="stat__label">不老松安平店</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="section services" id="services" aria-label="服務項目">
+    <div class="container">
+      <div style="text-align:center;">
+        <p class="section__label reveal">服務項目</p>
+        <h2 class="section__title reveal reveal--delay-1" style="margin-inline:auto;">選一個適合你的療程</h2>
+        <p class="section__desc reveal reveal--delay-2" style="margin-inline:auto;text-align:center;">每種療程都由張嘉豪師傅親自操作，用手感取代機器，讓身體真正放鬆。</p>
+      </div>
+
+      <div class="services__grid">
+
+        <!-- 腳底按摩 -->
+        <div class="service-card reveal">
+          <div class="service-card__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M17 8C8 10 5.9 16.17 3.82 19.5c-.88 1.47 1.13 2.8 2 1.5 1-1.5 1.5-2 3-2 1.5 0 2.5 1 3.5 1s2-1 3-1c1 0 1.5.5 2.5 1 1 .5 2-.5 2-1.5 0-3-1-4.5-1-5.5 0-2 1-3 1-3"/></svg>
+          </div>
+          <div class="service-card__category">足部放鬆</div>
+          <div class="service-card__name">腳底按摩</div>
+          <div class="service-card__desc">足底反射區按摩，消除疲勞、促進血液循環，讓全身從腳底開始放鬆。</div>
+          <ul class="service-card__tiers" role="list">
+            <li class="service-card__tier"><span>40 分鐘</span><span class="service-card__tier-price">NT$800</span></li>
+            <li class="service-card__tier"><span>60 分鐘</span><span class="service-card__tier-price">NT$1,200</span></li>
+            <li class="service-card__tier"><span>80 分鐘</span><span class="service-card__tier-price">NT$1,600</span></li>
+          </ul>
+          <div class="service-card__footer">
+            <span class="service-card__from">起價</span>
+            <span class="service-card__price">NT$800</span>
+          </div>
+        </div>
+
+        <!-- 全身指壓 -->
+        <div class="service-card reveal reveal--delay-1">
+          <div class="service-card__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M18 8h1a4 4 0 0 1 0 8h-1"/><path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/><line x1="6" y1="1" x2="6" y2="4"/><line x1="10" y1="1" x2="10" y2="4"/><line x1="14" y1="1" x2="14" y2="4"/></svg>
+          </div>
+          <div class="service-card__category">全身調理</div>
+          <div class="service-card__name">全身指壓</div>
+          <div class="service-card__desc">傳統指壓按摩技法，針對全身穴位深層放鬆，舒緩肌肉緊張與酸痛。</div>
+          <ul class="service-card__tiers" role="list">
+            <li class="service-card__tier"><span>60 分鐘</span><span class="service-card__tier-price">NT$1,100</span></li>
+            <li class="service-card__tier"><span>90 分鐘</span><span class="service-card__tier-price">NT$1,650</span></li>
+            <li class="service-card__tier"><span>120 分鐘</span><span class="service-card__tier-price">NT$2,200</span></li>
+          </ul>
+          <div class="service-card__footer">
+            <span class="service-card__from">起價</span>
+            <span class="service-card__price">NT$1,100</span>
+          </div>
+        </div>
+
+        <!-- 筋膜刀 FEATURED -->
+        <div class="service-card service-card--featured reveal reveal--delay-2">
+          <div class="service-card__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M14.5 10c-.83 0-1.5-.67-1.5-1.5v-5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5z"/><path d="M20.5 10H19V8.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/><path d="M9.5 14c.83 0 1.5.67 1.5 1.5v5c0 .83-.67 1.5-1.5 1.5S8 21.33 8 20.5v-5c0-.83.67-1.5 1.5-1.5z"/><path d="M3.5 14H5v1.5c0 .83-.67 1.5-1.5 1.5S2 16.33 2 15.5 2.67 14 3.5 14z"/><path d="M14 14.5c0 .83-.67 1.5-1.5 1.5h-5c-.83 0-1.5-.67-1.5-1.5S6.67 13 7.5 13h5c.83 0 1.5.67 1.5 1.5z"/><path d="M15.5 19H14v-1.5c0-.83.67-1.5 1.5-1.5s1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/><path d="M10 9.5C10 8.67 10.67 8 11.5 8h5c.83 0 1.5.67 1.5 1.5S17.33 11 16.5 11h-5c-.83 0-1.5-.67-1.5-1.5z"/><path d="M8.5 5H10v1.5c0 .83-.67 1.5-1.5 1.5S7 7.33 7 6.5 7.67 5 8.5 5z"/></svg>
+          </div>
+          <div class="service-card__category">⭐ 招牌項目</div>
+          <div class="service-card__name">筋膜刀療程</div>
+          <div class="service-card__desc">現代肌筋膜放鬆技術，有效改善筋膜沾黏、促進組織修復，特別適合久坐族與運動族群。</div>
+          <ul class="service-card__tiers" role="list">
+            <li class="service-card__tier"><span>足部 40 分鐘</span><span class="service-card__tier-price">NT$1,200</span></li>
+            <li class="service-card__tier"><span>足部 60 分鐘</span><span class="service-card__tier-price">NT$1,750</span></li>
+            <li class="service-card__tier"><span>全身 60 分鐘</span><span class="service-card__tier-price">NT$1,800</span></li>
+            <li class="service-card__tier"><span>全身 90 分鐘</span><span class="service-card__tier-price">NT$2,600</span></li>
+            <li class="service-card__tier"><span>全身 120 分鐘</span><span class="service-card__tier-price">NT$3,400</span></li>
+          </ul>
+          <div class="service-card__footer">
+            <span class="service-card__from">起價</span>
+            <span class="service-card__price">NT$1,200</span>
+          </div>
+        </div>
+
+        <!-- 深層組合 -->
+        <div class="service-card reveal reveal--delay-3">
+          <div class="service-card__icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+          </div>
+          <div class="service-card__category">超值套餐</div>
+          <div class="service-card__name">深層組合套餐</div>
+          <div class="service-card__desc">筋膜刀 60分鐘 + 全身指壓 60分鐘。雙重深度放鬆，身體最完整的恢復選擇。</div>
+          <ul class="service-card__tiers" role="list">
+            <li class="service-card__tier"><span>筋膜刀 60min</span><span class="service-card__tier-price">包含</span></li>
+            <li class="service-card__tier"><span>全身指壓 60min</span><span class="service-card__tier-price">包含</span></li>
+          </ul>
+          <div class="service-card__footer">
+            <span class="service-card__from" style="color:var(--color-primary);font-weight:700;">組合優惠</span>
+            <span class="service-card__price">NT$2,900</span>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="reveal" style="text-align:center;margin-top:var(--space-10);">
+        <a href="https://booking.tainanboxing.com" target="_blank" rel="noopener noreferrer" class="btn--primary" style="font-size:var(--text-lg);padding:var(--space-4) var(--space-12);">
+          查看全部項目並立即預約
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 柔手工作室 (軟推銷) ===== -->
+  <section class="section studio" id="studio" aria-label="柔手傳統整復推拿">
+    <div class="container">
+      <div class="studio__grid">
+
+        <div class="studio__image-wrap reveal">
+          <img src="./assets/tuina-studio.png" alt="柔手傳統整復推拿居家工作室" loading="lazy" width="800" height="600">
+          <div class="studio__badge">預約制 · 私密空間</div>
+        </div>
+
+        <div>
+          <div class="studio__label reveal">另有服務</div>
+          <h2 class="studio__title reveal reveal--delay-1">柔手傳統整復推拿</h2>
+          <p class="studio__desc reveal reveal--delay-2">
+            除了不老松門市，師傅另有私人居家工作室「柔手傳統整復推拿」，提供更私密、更個人化的傳統整復服務。空間溫馨，完全預約制，適合需要深度調理的客人。
+          </p>
+          <ul class="studio__points reveal reveal--delay-3" role="list">
+            <li class="studio__point">
+              <div class="studio__point-dot"></div>
+              <span><strong>傳統整復推拿</strong>——以手法為主，深入調整筋骨</span>
+            </li>
+            <li class="studio__point">
+              <div class="studio__point-dot"></div>
+              <span><strong>居家工作室</strong>——私密、安靜、一對一服務</span>
+            </li>
+            <li class="studio__point">
+              <div class="studio__point-dot"></div>
+              <span><strong>完全預約制</strong>——彈性時段，依需求安排</span>
+            </li>
+            <li class="studio__point">
+              <div class="studio__point-dot"></div>
+              <span><strong>同一位師傅</strong>——張嘉豪師傅親自服務，品質一致</span>
+            </li>
+          </ul>
+          <div class="reveal reveal--delay-4">
+            <a href="https://booking.tainanboxing.com" target="_blank" rel="noopener noreferrer" class="btn--gold">
+              詢問柔手工作室預約
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MASTER / ABOUT ===== -->
+  <section class="section master" id="master" aria-label="關於張嘉豪師傅">
+    <div class="container">
+      <div class="master__grid">
+
+        <div class="master__card reveal">
+          <div class="master__avatar" aria-hidden="true">嘉</div>
+          <div class="master__name">張嘉豪師傅</div>
+          <div class="master__role">不老松足湯安平店 · 柔手傳統整復推拿</div>
+          <p class="master__bio">
+            扎根台南安平的按摩調理師，擁有多年傳統手法與現代療程結合的實務經驗。不老松安平店的每一次療程，都是師傅親自操作，讓你感受到真正由手傳遞的溫度與力道。
+          </p>
+          <div class="master__skills">
+            <span class="master__skill-tag">腳底按摩</span>
+            <span class="master__skill-tag">全身指壓</span>
+            <span class="master__skill-tag">筋膜刀</span>
+            <span class="master__skill-tag">傳統整復</span>
+            <span class="master__skill-tag">推拿手法</span>
+          </div>
+        </div>
+
+        <div class="master__features reveal reveal--delay-2">
+          <div class="master__feature">
+            <div class="master__feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+            </div>
+            <div>
+              <div class="master__feature-title">師傅親自操作</div>
+              <div class="master__feature-desc">每一位客人都由張嘉豪師傅親自服務，手感與力道精準，不假他人。</div>
+            </div>
+          </div>
+          <div class="master__feature">
+            <div class="master__feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            <div>
+              <div class="master__feature-title">深夜不打烊</div>
+              <div class="master__feature-desc">下午兩點到凌晨兩點，連夜班族、夜貓族都能在下班後好好放鬆。</div>
+            </div>
+          </div>
+          <div class="master__feature">
+            <div class="master__feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            </div>
+            <div>
+              <div class="master__feature-title">線上即時預約</div>
+              <div class="master__feature-desc">系統 24 小時開放，隨時挑選時段，預約確認快速便利。</div>
+            </div>
+          </div>
+          <div class="master__feature">
+            <div class="master__feature-icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            <div>
+              <div class="master__feature-title">台南安平在地</div>
+              <div class="master__feature-desc">安平72號，在地深耕，熟悉社區，就在你身邊。</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOURS ===== -->
+  <section class="section hours" id="hours" aria-label="營業時間與地址">
+    <div class="container">
+      <p class="section__label reveal">時間 & 地點</p>
+      <h2 class="section__title reveal reveal--delay-1">隨時恭候</h2>
+      <div class="hours__grid">
+
+        <div class="hours__card reveal reveal--delay-1">
+          <div class="hours__card-title">
+            <div class="hours__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+            </div>
+            每日營業時間
+          </div>
+          <div class="hours__time">14:00 — 02:00</div>
+          <div class="hours__time-sub">每天開放，全年無休</div>
+          <div class="hours__late-badge">
+            <svg width="10" height="10" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><circle cx="12" cy="12" r="10"/></svg>
+            深夜也可到館 · 凌晨 2 點
+          </div>
+          <div class="hours__divider"></div>
+          <div class="hours__address">
+            <strong>不老松足湯安平店</strong><br>
+            台南市安平區 72 號<br>
+            線上預約系統 24 小時開放
+          </div>
+        </div>
+
+        <div class="hours__card reveal reveal--delay-2">
+          <div class="hours__card-title">
+            <div class="hours__icon">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            </div>
+            線上預約
+          </div>
+          <div style="margin-bottom:var(--space-5);">
+            <div style="font-family:var(--font-body);font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-2);">預約方式</div>
+            <div style="font-family:var(--font-display);font-size:var(--text-xl);font-weight:700;color:var(--color-text);">即時線上預約</div>
+          </div>
+          <div style="margin-bottom:var(--space-6);">
+            <div style="font-family:var(--font-body);font-size:var(--text-sm);color:var(--color-text-muted);margin-bottom:var(--space-2);">查詢或取消預約</div>
+            <div style="font-family:var(--font-body);font-size:var(--text-sm);color:var(--color-text);">輸入手機號碼即可查詢</div>
+          </div>
+          <a href="https://booking.tainanboxing.com" target="_blank" rel="noopener noreferrer" class="btn--primary" style="width:100%;justify-content:center;">
+            前往預約系統
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== 拳擊副業 (小心眼) ===== -->
+  <section class="section boxing" aria-label="台南拳擊">
+    <div class="container">
+      <div class="boxing__inner reveal">
+        <div class="boxing__left">
+          <div class="boxing__label">師傅的另一面</div>
+          <div class="boxing__title">台南<span>拳擊</span> — 副業也是熱情</div>
+          <p class="boxing__desc">
+            平日是按摩師，場下是拳擊人。師傅在台南安平同樣提供拳擊相關課程，對拳擊有興趣的朋友歡迎洽詢。
+          </p>
+        </div>
+        <a href="https://booking.tainanboxing.com" target="_blank" rel="noopener noreferrer" class="boxing__link">
+          了解拳擊課程
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA ===== -->
+  <section class="cta-section" aria-label="立即預約">
+    <div class="container">
+      <div class="cta-section__inner">
+        <h2 class="cta-section__title reveal">今天，讓自己好好休息一下</h2>
+        <p class="cta-section__desc reveal reveal--delay-1">不需要等到假日，下班後、深夜都歡迎。線上預約系統24小時開放，選一個你方便的時段，師傅等你。</p>
+        <a href="https://booking.tainanboxing.com" target="_blank" rel="noopener noreferrer" class="btn--white reveal reveal--delay-2">
+          立即預約張嘉豪師傅
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" aria-hidden="true"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__inner">
+        <a href="#" class="footer__brand">不老松<span>安平店</span> · 張嘉豪師傅</a>
+        <ul class="footer__links" role="list">
+          <li><a href="#services">服務項目</a></li>
+          <li><a href="#studio">柔手工作室</a></li>
+          <li><a href="#master">關於師傅</a></li>
+          <li><a href="#hours">時間地點</a></li>
+          <li><a href="https://booking.tainanboxing.com" target="_blank" rel="noopener noreferrer">立即預約</a></li>
+        </ul>
+        <a href="https://www.perplexity.ai/computer" target="_blank" rel="noopener noreferrer" class="footer__attribution">
+          Created with Perplexity Computer
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== SCRIPTS ===== -->
+  <script>
+    // Theme toggle
+    (function(){
+      const t = document.querySelector('[data-theme-toggle]');
+      const r = document.documentElement;
+      let d = r.getAttribute('data-theme') || (matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+      r.setAttribute('data-theme', d);
+      function updateIcon() {
+        if (!t) return;
+        t.setAttribute('aria-label', '切換為' + (d === 'dark' ? '亮色' : '暗色') + '模式');
+        t.innerHTML = d === 'dark'
+          ? '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/></svg>'
+          : '<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></svg>';
+      }
+      updateIcon();
+      t && t.addEventListener('click', () => {
+        d = d === 'dark' ? 'light' : 'dark';
+        r.setAttribute('data-theme', d);
+        updateIcon();
+      });
+    })();
+
+    // Nav scroll
+    const nav = document.getElementById('nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 40);
+    }, { passive: true });
+
+    // Mobile menu
+    const mobileToggle = document.getElementById('mobileToggle');
+    const mobileMenu = document.getElementById('mobileMenu');
+    const mobileClose = document.getElementById('mobileClose');
+    function openMobileMenu() {
+      mobileMenu.classList.add('open');
+      mobileToggle.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeMobileMenu() {
+      mobileMenu.classList.remove('open');
+      mobileToggle.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+    mobileToggle.addEventListener('click', openMobileMenu);
+    mobileClose.addEventListener('click', closeMobileMenu);
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMobileMenu(); });
+
+    // Scroll reveal
+    const reveals = document.querySelectorAll('.reveal');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) { e.target.classList.add('visible'); obs.unobserve(e.target); }
+      });
+    }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+    reveals.forEach(el => obs.observe(el));
+    document.querySelectorAll('.hero .reveal').forEach(el => el.classList.add('visible'));
+  </script>
+<div style="position:fixed !important;bottom:25px !important;right:25px !important;z-index:999999 !important;">
+<a href="https://line.me/R/ti/p/@roushou" target="_blank" style="display:block !important;width:60px !important;height:60px !important;background:#00C851 !important;border-radius:50% !important;color:white !important;font-size:30px !important;line-height:60px !important;text-align:center !important;text-decoration:none !important;box-shadow:0 4px 15px rgba(0,200,81,0.5) !important;">💬</a>
+</div>
+
+</body>
+</html>
